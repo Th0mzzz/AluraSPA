@@ -1,0 +1,57 @@
+@import '../abstract/variaveis';
+
+#cupom {
+    background-color: $cor-terciaria;
+    padding: 4rem;
+    text-align: center;
+    .texto{
+        color: $cor-primaria;
+        h2{
+            margin: 2rem;
+            font-size: calc($tamanho-do-texto / 1.7);
+        }
+    }
+    .input{
+        display: flex;
+        margin: 0 auto;
+        width: 60%;
+        border-radius: 40px;
+        border: 1px solid transparent;
+    
+        input{
+            margin: auto;
+            width: 100%;
+            border-radius:40px;
+            height: 40px;
+            border: none;
+            outline: none;
+            text-align: center;
+            font-size: calc($tamanho-do-texto / 2.5);
+            font-weight: 520;
+        }
+        &:hover,&:focus-within{
+            border: 1px solid $cor-primaria;
+        }
+    }
+
+    button{
+        text-transform: uppercase;
+        margin-top: .75rem ;
+        outline: none;
+        height: 40px;
+        width: 130px;
+        background-color: $cor-secundaria;
+        border: none;
+        color: white;
+        font-weight: 600;
+        letter-spacing: 1px;
+        font-size: calc($tamanho-do-texto / 3);
+        cursor: pointer;
+        border-radius: 15px;
+        transition: transform .2s;
+        &:hover{
+            transform: translateY(-5px);
+            background-color: $cor-primaria;
+        }
+    }
+}

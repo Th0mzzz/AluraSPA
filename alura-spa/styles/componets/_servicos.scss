@@ -1,33 +1,32 @@
 @import '../abstract/variaveis';
 
 #servicos{
-    margin-top:4rem;
+    padding: 4rem;
     h4{
-        font-size: calc($tamanho-do-texto , 1.2);
-        color: $cor-terciaria;
+        font-size: calc($tamanho-do-texto / 1.5);
+        color: $cor-secundaria;
         font-weight: 300;
         text-align: center;
-        margin: 1rem;
+        margin-bottom: 3rem;
     }
     h3{
         text-align: center;
-        font-size: calc($tamanho-do-texto , 1.5);
-        color: $cor-secundaria;
+        font-size: calc($tamanho-do-texto / 1.2);
+        color: $cor-primaria;
         margin-bottom: 30px;
         font-weight: 300;
     }
 
     .cards{
         display: flex;
-        flex-flow: row nowrap;
-        align-items:center;
-        justify-content: center;
-        gap: 1rem;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        gap: .4rem;
         .card{
             display: flex;
             flex-flow: column nowrap;
-            justify-content: space-between;
-            width: 500px;
+            align-items: center;
+            width: 360px;
             text-align: center;
             .img__container{
                 padding-bottom: 2px;
@@ -39,19 +38,18 @@
             }
 
             .descricao{
-                margin-bottom: 1.5rem;
-                margin-top: 1.5rem;
                 display: flex;
                 flex-flow: column nowrap;
                 max-width: 100%;
-                gap: 1rem;
+                
             h5{
-                font-size: calc($tamanho-do-texto , 1.5);
+                font-size: calc($tamanho-do-texto / 1.1);
                 font-weight: 300;
                 color: $cor-secundaria
             }
             p{
-                font-size: calc($tamanho-do-texto , 3);
+                font-size: calc($tamanho-do-texto / 3);
+                margin: 1rem;
             }
         }
         
